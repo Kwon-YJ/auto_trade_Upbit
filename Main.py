@@ -3,8 +3,7 @@ from Order import order
 from ATR import day_ago, get_TR, get_ATR
 import time
 import datetime
-from Data_Group import upbit, List_tickers
-from Data_Group import Q1, Q2, Q3, Q4
+from Data_Group import upbit, List_tickers, Q1, Q2, Q3, Q4, Q5
 import pickle
 
 while(True):
@@ -23,5 +22,6 @@ while(True):
             Q2 += datetime.timedelta(hours = 24)
             Q3 += datetime.timedelta(hours = 24)
             Q4 += datetime.timedelta(hours = 24)
+            Q5 += datetime.timedelta(hours = 24)
             break
     

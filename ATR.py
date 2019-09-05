@@ -21,8 +21,8 @@ def get_TR(date,ticker):
 
 def get_ATR(ticker):
     value = 0
-    for i in range(10):
+    for i in range(15):
         TR = get_TR(i+2,ticker)
         value = value + TR
-    return value/10
+    return value/15
 
