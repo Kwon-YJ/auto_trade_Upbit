@@ -2,8 +2,13 @@ import pickle
 import time
 import datetime
 import pyupbit
+import os
 
-with open("Key_Value.pickle","rb") as fr:
+
+
+
+#with open("Key_Value.pickle","rb") as fr:
+with open(str(os.getcwd())+"/Key_Value.pickle","rb") as fr:
     Key_Value = pickle.load(fr)
 upbit = pyupbit.Upbit(Key_Value[0], Key_Value[1])
 
